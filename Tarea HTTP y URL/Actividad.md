@@ -4,17 +4,17 @@ Grupo 6:
 - Franklin Espinoza Pari
 - Luis Angel Azaña Vega
 ## Comprendiendo Request y Response
-![Imagen_1](imagenes/Captura de pantalla 2023-09-25 111837.png)
-![Imagen_2](imagenes/Captura de pantalla 2023-09-25 112347.png)
+![Imagen_1](imagenes/imagen_1.png)
+![Imagen_2](imagenes/imagen_2.png)
 Guardamos la salida en el archivo rw.html
-![Imagen_3](imagenes/Captura de pantalla 2023-09-25 112459.png)
+![Imagen_3](imagenes/imagen_3.png)
 **Pregunta:**¿Cuáles son las dos diferencias principales que has visto anteriormente y lo
 que ves en un navegador web 'normal'? ¿Qué explica estas diferencias?
 - Respuesta: En la pagina web de randomword se puede ver la interfaz, es decir, en
   la pagina web ya esta renderizada y en la terminal solo se puede ver codigo html.
 ## Cómo cree el servidor que se ve una solicitud
 Nos haremos pasar por un servidor Web escuchando el puerto 8081:`nc -l 8081`.
-![Imagen_4](imagenes/Captura de pantalla 2023-09-25 112755.png)
+![Imagen_4](imagenes/imagen_4.png)
 **Pregunta:** Suponiendo que estás ejecutando curl desde otro shell ¿qué URL tendrás
 que pasarle a curl para intentar acceder a tu servidor falso y por qué?
 - Respuesta : Tenemos que pasarle la URL http://localhost:8081 porque estamos
@@ -22,10 +22,10 @@ que pasarle a curl para intentar acceder a tu servidor falso y por qué?
   desde el puerto 8081.
 
 Abrimos otra terminal y mandamos una solicitud http al servidor falso
-![Imagen_5](imagenes/Captura de pantalla 2023-09-25 113206.png)
+![Imagen_5](imagenes/imagen_5.png)
 Retornamos al terminal donde teniamos a nuestro servidor falso escuchando y notamos
 lo siguiente.
-![Imagen_6](imagenes/Captura de pantalla 2023-09-25 113249.png)
+![Imagen_6](imagenes/imagen_6.png)
 **Pregunta:** La primera línea de la solicitud identifica qué URL desea recuperar el cliente.
 ¿Por qué no ves http://localhost:8081 en ninguna parte de esa línea?
 - Respuesta: Porque esa informacion se encuentra en el comando curl
@@ -34,8 +34,8 @@ lo siguiente.
 Probaremos `curl --help` para verificar que la línea de comando
 curl -i `http://randomword.saasbook.info` mostrará ambos el encabezado de respuesta
 del servidor y el cuerpo de la respuesta.
-![Imagen_7](imagenes/Captura de pantalla 2023-09-25 113607.png)
-![Imagen_8](imagenes/Captura de pantalla 2023-09-25 113717.png)
+![Imagen_7](imagenes/imagen_7.png)
+![Imagen_8](imagenes/imagen_8.png)
 **Pregunta:** Según los encabezados del servidor, ¿cuál es el código de respuesta HTTP
 del servidor que indica el estado de la solicitud del cliente y qué versión del protocolo
 HTTP utilizó el servidor para responder al cliente?
@@ -58,7 +58,7 @@ al cliente cómo interpretar el resultado?.
 **Pregunta:** ¿Cuál sería el código de respuesta del servidor si intentaras buscar una
 URL inexistente en el sitio generador de palabras aleatorias? Pruéba esto utilizando el
 procedimiento anterior.
-![Imagen_9](imagenes/Captura de pantalla 2023-09-25 113946.png)
+![Imagen_9](imagenes/imagen_9.png)
 ¿Qué otros códigos de error HTTP existen?
 - ``200`` OK ⇒ La solicitud se ha procesado correctamente
 - ``301`` Moved Permanently ⇒ El recurso solicitado a cambiado de ubicacion
@@ -79,18 +79,18 @@ principal diferencia entre ``4xx`` y ``5xx`` ?.
 ## Qué es un cuerpo de Request
 Formulario HTML
 Creamos el archivo Archivito.html y guardamos el formultario html
-![Imagen_10](imagenes/Captura de pantalla 2023-09-25 114254.png)
+![Imagen_10](imagenes/imagen_10.png)
 **Pregunta:** ¿con qué URL deberías reemplazar Url-servidor-falso en el archivo
 anterior?
 - Respuesta : Debemos cambiar la url por la de “http://localhost:8081” ya que
   tenemos un servidor falso en nuestra pc a la espera de una solicitud en el puerto 8081.
 
 Si lo abrimos en el navegador y hacemos login
-![Imagen_11](imagenes/Captura de pantalla 2023-09-25 114413.png)
+![Imagen_11](imagenes/imagen_11.png)
 
 Notamos que le llega esto a la terminal donde nc esta escuchando
 
-![Imagen_12](imagenes/Captura de pantalla 2023-09-25 114513.png)
+![Imagen_12](imagenes/imagen_12.png)
 **Pregunta:** ¿Cómo se presenta al servidor la información que ingresó en el formulario?
 ¿Qué tareas necesitaría realizar un framework SaaS como Sinatra o Rails para
 presentar esta información en un formato conveniente a una aplicación SaaS escrita,
@@ -101,17 +101,17 @@ observando las diferencias en el resultado impreso por nc :
 
 - ¿Cuál es el efecto de cambiar las propiedades de nombre de los campos del
   formulario?
-![Imagen_13](imagenes/Captura de pantalla 2023-09-25 114647.png)
+![Imagen_13](imagenes/imagen_13.png)
 Los campos del formulario se identificarian de otra forma
 
 - ¿Puedes tener más de un botón ``Submit`` ? Si es así, ¿cómo sabe el servidor en cuál
   se hizo clic? (Sugerencia: experimenta con los atributos de la etiqueta ``<submit>`` ).
 
-![Imagen_14](imagenes/Captura de pantalla 2023-09-25 114824.png)  
+![Imagen_14](imagenes/imagen_14.png)  
 
-![Imagen_15](imagenes/Captura de pantalla 2023-09-25 115026.png)
+![Imagen_15](imagenes/imagen_15.png)
 
-![Imagen_16](imagenes/Captura de pantalla 2023-09-25 115115.png)
+![Imagen_16](imagenes/imagen_16.png)
 
 Sabe quien hizo click por el atributo “name” que existe en cada campo.
 
@@ -120,7 +120,7 @@ Sabe quien hizo click por el atributo “name” que existe en cada campo.
 
 Con GET, los datos del formulario son visibles en la URL como podemos ver
 
-![Imagen_17](imagenes/Captura de pantalla 2023-09-25 115319.png)
+![Imagen_17](imagenes/imagen_17.png)
 
 - ¿Qué otros verbos HTTP son posibles en la ruta de envío del formulario?
 
@@ -134,9 +134,9 @@ cambios o modificaciones al recurso.
 
 **Pregunta:** Prueba las dos primeras operaciones GET anteriores. El cuerpo de la respuesta para la primera debe ser "Logged in: false" y para la segunda "Login cookie set". ¿Cuáles son las diferencias en los encabezados de respuesta que indican que la segunda operación está configurando una cookie? (Sugerencia: usa curl -v, que mostrará tanto los encabezados de solicitud como los encabezados y el cuerpo de la respuesta, junto con otra información de depuración. curl --help imprimirá una ayuda voluminosa para usar cURL y man curl mostrará la página del manual de Unix para cURL en la mayoría de los sistemas.)
 
-![Imagen_18](imagenes/WhatsApp Image 2023-09-25 at 3.03.41 PM.jpeg)
+![Imagen_18](imagenes/imagen_18.jpeg)
 
-![Imagen_19](imagenes/WhatsApp Image 2023-09-25 at 3.06.31 PM.jpeg)
+![Imagen_19](imagenes/imagen_19.jpeg)
 
 Respuesta:
 Cuando un usuario ``logs in`` o ``logs off`` desde una website, el encabezado Set-cookie guarda un cookie donde almacena el estado de ``logged-in`` del usuario. En las imagenes anteriores podemos observar que realizando la operacion ``GET /login``, cambia el estado `logged-in` del usuario a ``true``.
@@ -150,9 +150,9 @@ Solucion al problema:
 Almacenamos los cookies del encabezado `Set-cookie` en el archivo `cookie.txt` para luego mandarle al servidor a la hora de realizar la operacion `GET /`. Lo realizamos de la siguiente manera
 
 
-![Imagen_20](imagenes/WhatsApp Image 2023-09-25 at 3.40.31 PM.jpeg)
+![Imagen_20](imagenes/imagen_20.jpeg)
 
-![Imagen_21](imagenes/WhatsApp Image 2023-09-25 at 3.42.57 PM.jpeg)
+![Imagen_21](imagenes/imagen_21.jpeg)
 
 
 
