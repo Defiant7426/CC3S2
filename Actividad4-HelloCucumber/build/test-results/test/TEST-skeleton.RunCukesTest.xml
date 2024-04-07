@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="skeleton.RunCukesTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-04-07T04:03:49" hostname="Katana" time="0.036">
+  <properties/>
+  <testcase name="eaten many cukes and growl" classname="skeleton.RunCukesTest" time="0.026"/>
+  <testcase name="eaten many cukes and not growl" classname="skeleton.RunCukesTest" time="0.002"/>
+  <testcase name="Eating few cukes" classname="skeleton.RunCukesTest" time="0.001"/>
+  <testcase name="Eating many cukes" classname="skeleton.RunCukesTest" time="0.002"/>
+  <testcase name="Eating no cukes" classname="skeleton.RunCukesTest" time="0.001"/>
+  <testcase name="I wait 0 hour and I eat many cukes" classname="skeleton.RunCukesTest" time="0.001"/>
+  <testcase name="I wait 0 hour and I eat 0 cukes" classname="skeleton.RunCukesTest" time="0.001"/>
+  <system-out><![CDATA[I'm eating 27 cukes!
+I ate 27 cucumbers.
+I'm eating 27 cukes!
+I ate 27 cucumbers.
+I'm eating 5 cukes!
+I ate 5 cucumbers.
+I'm eating 12 cukes!
+I ate 12 cucumbers.
+I'm eating 0 cukes!
+I ate 0 cucumbers.
+I'm eating 30 cukes!
+I ate 30 cucumbers.
+I'm eating 0 cukes!
+I ate 0 cucumbers.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
