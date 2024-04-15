@@ -1,0 +1,16 @@
+
+ 	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(Ïÿü¼ÿÿÿÿÿ8Ùñ‚«ì1J$b2dfbaa4-30b5-4a4d-9b76-2499f511431c
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öâ¤Åşÿÿÿÿ8Úñ‚«ì1J$1d9a0a97-0a69-4f10-a738-2460c251d408
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÄÒ¢8Úñ‚«ì1J$dda01936-82f4-4bb8-9866-e5db13a33113
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ñ¾®–8Ûñ‚«ì1J$2b7fc2ce-cb41-486a-b9f3-4841b1c5a2d7
+r	java:S106	"+Replace this use of System.out by a logger.(ÈÑöûÿÿÿÿ8ßñ‚«ì1J$479e6cbd-e43b-4637-b657-07c08ba095c3
+m	java:S106"+Replace this use of System.out by a logger.(ÎÀ™Ñ8áñ‚«ì1J$8676936a-15ab-4949-81ef-0e4d5265e4d2
+r	java:S106"+Replace this use of System.out by a logger.(åºÑ¢úÿÿÿÿ8áñ‚«ì1J$c97c6500-630b-4de7-93a6-b6cee80b3652
+m	java:S106"+Replace this use of System.out by a logger.(İ ™ã8áñ‚«ì1J$8765c92e-9613-43a4-8927-13ba982ad8c9
+r	java:S106"+Replace this use of System.out by a logger.(ƒÇãˆúÿÿÿÿ8ãñ‚«ì1J$e620b014-0b2b-4615-a8cb-cb85078658c1
+m	java:S106"+Replace this use of System.out by a logger.(Ë»òø8êƒ«ì1J$21a59df4-8a96-4165-ac04-fb6d0e2ec223
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œç«Üøÿÿÿÿ8âñ‚«ì1J$7263c289-b97a-4a2c-9d5b-f4b365efbafb
+r	java:S106"+Replace this use of System.out by a logger.(›‚Ä‰ûÿÿÿÿ8¬Î„«ì1J$8313ea12-eff2-4f62-9fbc-c576297548c7
+m	java:S106 "+Replace this use of System.out by a logger.(É¹—®8â†…«ì1J$52c6d971-0033-4784-b215-0ac4d4a97976
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8â¡Ÿî1

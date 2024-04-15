@@ -1,0 +1,13 @@
+
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´¶˜³üÿÿÿÿ8ê¥Éì1J$713f77fb-3e5b-4e72-a13b-76cdfd39906b
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÄÒ¢8ê¥Éì1J$64bd90b5-a79b-491d-baa1-6cb89ec5834f
+}
+java:S1854
+":Remove this useless assignment to local variable "puntos".(Ó’Î—8ù¥Éì1J$29910805-9936-4609-acdd-69875fd2b60c
+r	java:S106"+Replace this use of System.out by a logger.(ìŸ°ûùÿÿÿÿ8ú¥Éì1J$a34f81e4-47d3-429d-b316-951510edfe38
+r	java:S106"+Replace this use of System.out by a logger.(¥Ñ«òüÿÿÿÿ8ü¥Éì1J$02943093-fc0f-435c-8931-415c0f62c3ef
+r	java:S106"+Replace this use of System.out by a logger.(©ëşíùÿÿÿÿ8ü¥Éì1J$b39c3c8f-b8b9-48e0-8362-70cac881ba41
+r	java:S106"+Replace this use of System.out by a logger.(ôúæéüÿÿÿÿ8ı¥Éì1J$9ea05ca3-d079-42d2-8bb1-42cc216066bd
+r	java:S106"+Replace this use of System.out by a logger.(şÇŸúÿÿÿÿ8ı¥Éì1J$95b585a5-8bfb-46f8-aa61-252544b0f3dd
+l	java:S106"+Replace this use of System.out by a logger.(Ò¦¼88ı¥Éì1J$2c54f842-e005-4984-8b1b-30c6c47d6a34
+m	java:S106"+Replace this use of System.out by a logger.(§òş£8ş¥Éì1J$55ef091f-2196-4c10-9650-09f35359dab5

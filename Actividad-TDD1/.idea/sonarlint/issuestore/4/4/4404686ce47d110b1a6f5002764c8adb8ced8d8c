@@ -1,0 +1,16 @@
+
+ 	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(«ûˆ³üÿÿÿÿ8õì1J$f439db04-b316-4607-b60e-7e6c8492d14e
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öâ¤Åşÿÿÿÿ8öì1J$4ea88de1-6a9c-4a42-9e2a-3a7281228522
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëéšä8öì1J$7e36990e-f46b-4d3e-82e7-098c77e74ddf
+“	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÄÒ¢8öì1J$ba264c71-8c35-4b28-8c2e-758c5c69c942
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ûî¯è8÷ì1J$fcdb1700-92af-4d5d-953d-4656ae13abf1
+r	java:S106"+Replace this use of System.out by a logger.(ÈÑöûÿÿÿÿ8…ì1J$ad5c8676-5767-406e-b6fa-5236e4f535f6
+m	java:S106"+Replace this use of System.out by a logger.(é²™å8‡ì1J$d9bdf3ff-1d66-4739-9cf8-13eff3bea7fe
+r	java:S106"+Replace this use of System.out by a logger.(åºÑ¢úÿÿÿÿ8‡ì1J$0ca153a2-3892-462b-8ffd-e8640a40ac4a
+l	java:S106"+Replace this use of System.out by a logger.(Ò¦¼88‰ì1J$e433fd21-3952-476c-b409-d6ab49f55b2c
+m	java:S106"+Replace this use of System.out by a logger.(§òş£8‰ì1J$dfae2f2f-4362-4c72-862e-c395aeaf01fb
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çèİ•úÿÿÿÿ8ˆì1J$4d192649-b35a-43ae-84c8-9dfe8e7eafda
+r	java:S106"+Replace this use of System.out by a logger.(şÇŸúÿÿÿÿ8Šì1J$283654f2-0a30-49d4-aa29-ac6e427e3d53
+•	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œç«Üøÿÿÿÿ8‰ì1J$e475ce51-376d-4881-bc04-d39e65cc42ec
+r	java:S106%"+Replace this use of System.out by a logger.(›‚Ä‰ûÿÿÿÿ8µ¢ì1J$f170f90b-49ad-48dc-bba4-a0120d4a7673
+m	java:S106("+Replace this use of System.out by a logger.(É¹—®8ë„£ì1J$fdb6d19e-3e7b-41c9-9aa6-cad34be54191
