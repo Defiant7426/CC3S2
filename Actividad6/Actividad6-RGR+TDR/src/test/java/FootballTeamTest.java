@@ -5,15 +5,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import org.junit.jupiter.params.provider.ValueSource;
 public class FootballTeamTest {
-    /* YA NO ES NECESARIA
-    @Test
-    void constructorShouldSetGamesWon() {
-        FootballTeam team = new FootballTeam(3);
-        //assertThat(team.getGamesWon()).isEqualTo(3);
-        assertThat(team.getGamesWon())
-                .as("number of games won")
-                .isEqualTo(3);
-    }*/
 
     private static final int ANY_NUMBER = 123;
 
@@ -58,15 +49,3 @@ public class FootballTeamTest {
     }
 
 }
-/*
-    @ParameterizedTest
-    @ValueSource(ints = {0,1,3,10})
-    private static final int THREE_GAMES_WON = 3;
-    @Test
-    void constructorShouldSetGamesWon() {
-        FootballTeam team = new FootballTeam(THREE_GAMES_WON);
-        assertThat(team.getGamesWon())
-            .as("number of games won")
-            .isEqualTo(THREE_GAMES_WON);
-       }
- */
