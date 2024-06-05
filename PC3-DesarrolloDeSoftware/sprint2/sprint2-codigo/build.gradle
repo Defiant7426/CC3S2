@@ -1,0 +1,86 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    configurations.maybeCreate("pitest")
+    dependencies {
+        classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.7.0' // Updated
+        pitest 'org.pitest:pitest-cucumber-plugin:0.4' // Updated location and latest version
+    }
+}
+
+plugins {
+    id "info.solidsoft.pitest" version "1.7.0" // Updated
+    id "org.sonarqube" version "3.5.0.2730"
+    id 'java-library'
+    id "jacoco"
+}
+
+// Apply the java-library plugin to add support for Java Library
+apply plugin: 'java-library'
+apply plugin: "jacoco"
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenCentral() // jcenter() is at its end of life, so using Maven Central
+}
+
+jacoco {
+    toolVersion = "0.8.12" // Updated to latest version
+}
+
+jacocoTestReport {
+    reports {
+        xml.required = true  // Update with required
+        csv.required = true
+        html.required = true
+    }
+}
+
+tasks.withType(Test) {
+    finalizedBy jacocoTestReport  // Generate Jacoco report after tests
+}
+
+dependencies {
+    // Dependencies updated to the latest versions
+    api 'org.apache.commons:commons-math3:3.6.1' // Latest as of last check
+
+    // Updated to the latest version of Guava
+    implementation 'com.google.guava:guava:31.0.1-jre'
+
+    // Use JUnit Jupiter API for unit testing with JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+
+    // For backward compatibility with JUnit 4 tests
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.8.2'
+
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+
+
+    // Cucumber for BDD
+    testImplementation 'io.cucumber:cucumber-java:7.16.1'
+    testImplementation 'io.cucumber:cucumber-junit:7.16.1'
+}
+
+test {
+    useJUnitPlatform() // This is required to run JUnit 5 tests
+    testLogging.showStandardStreams = true
+}
+
+check.dependsOn jacocoTestReport
+check.dependsOn "pitest"
+
+pitest {
+    targetClasses = ['com.example.*']  // Adjusted to match your package structure
+}
+
+sonar {
+    properties {
+        property "sonar.projectKey", "sonarlint"
+        property "sonar.login", "sqp_a61c64de371ec92818c942c86e87c7e4a5a2ee80"
+        property "sonar.host.url", "http://localhost:9000"
+    }
+}

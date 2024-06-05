@@ -1,0 +1,13 @@
+
+›	java:S135."YReduce the total number of break and continue statements in this loop to use at most one.(£Ç²¤8´Â•µû1J$a3e5074d-1847-4a58-983d-e7bca5add67b
+d
+java:S1643H"Use a StringBuilder instead.(ßòÉÑøÿÿÿÿ8´Â•µû1J$fe8e615d-9cb6-4130-9263-eab22c2f0987
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Şä…Ñ8´Â•µû1J$2f8c9edb-15f0-406d-96c1-109f768b1315
+r	java:S106"+Replace this use of System.out by a logger.(¶ÛàØúÿÿÿÿ8ÅÂ•µû1J$ae12eb52-7e8e-49f3-a6a3-4b3d927f334e
+r	java:S106"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8ÅÂ•µû1J$aa821089-88d5-48fe-ab67-140a5ea61e8f
+i
+java:S1168!"&Return an empty array instead of null.(¥¹ï8ÅÂ•µû1J$aafecbee-e959-4a38-a999-17534544f152
+i
+java:S1168>"&Return an empty array instead of null.(¥¹ï8ÅÂ•µû1J$b33e21cb-28b7-4761-80ba-58124422fad7
+	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿•Ş«8ÅÂ•µû1J$097a1201-7e8a-419d-9c2c-ff6f7dcb8dc5
+~	java:S125V"<This block of commented-out lines of code should be removed.(¾ˆ˜ë8ÅÂ•µû1J$0d967758-4f8c-4cdb-889d-1c4ec8d8b244
