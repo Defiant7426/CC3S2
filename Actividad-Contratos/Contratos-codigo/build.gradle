@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'info.solidsoft.pitest' version '1.15.0'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.assertj:assertj-core:3.25.3'
+    pitest 'org.pitest:pitest-junit5-plugin:1.1.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+pitest {
+    targetClasses = ['org.example.*'] // Paquete de clases a mutar
+    mutators = ['DEFAULTS'] // Conjunto de mutadores [OLD_DEFAULTS, DEFAULTS, STRONGER, ALL]
+    outputFormats = ['HTML'] // Formato de salida del informe
+    timestampedReports = false // Deshabilitar informes con marca de tiempo para facilitar la navegación
+    verbose = true
+}
+
+// ./gradlew pitest
