@@ -1,0 +1,12 @@
+
+Z
+java:S1854"8Remove this useless assignment to local variable "wave".(ÈÞÙÇøÿÿÿÿ8¢Ýâ‡ƒ2
+Y
+java:S1117"7Rename "wave" which hides the field declared at line 6.(ÈÞÙÇøÿÿÿÿ8¢Ýâ‡ƒ2
+K
+java:S1481")Remove this unused "wave" local variable.(ÈÞÙÇøÿÿÿÿ8£Ýâ‡ƒ2
+X	java:S125"<This block of commented-out lines of code should be removed.(ì üˆ8£Ýâ‡ƒ2
+E
+java:S1068"(Remove this unused "wave" private field.(Ý‚ å8¥Ýâ‡ƒ2
+R
+java:S1068"0Remove this unused "enemyFactory" private field.(àçßÊüÿÿÿÿ8¥Ýâ‡ƒ2

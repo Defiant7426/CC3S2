@@ -1,0 +1,4 @@
+rootProject.name = 'PlantillaPiTest'
+include 'src:main:TowerDefense'
+findProject(':src:main:TowerDefense')?.name = 'TowerDefense'
+
