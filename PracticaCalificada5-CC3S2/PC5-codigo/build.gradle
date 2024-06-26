@@ -1,0 +1,66 @@
+plugins {
+    id 'java'
+    id 'info.solidsoft.pitest' version '1.15.0'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Use JUnit Jupiter API for unit testing with JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+
+    // For backward compatibility with JUnit 4 tests
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.8.2'
+
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation platform('org.assertj:assertj-bom:3.25.3')
+    implementation 'org.assertj:assertj-core'
+
+    implementation platform('com.google.code.gson:gson:2.10.1')
+    implementation 'com.google.code.gson:gson'
+
+    implementation platform('com.fasterxml.jackson:jackson-bom:2.17.0')
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+
+    implementation platform('org.junit:junit-bom:5.11.0-M1')
+    implementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.junit.platform:junit-platform-launcher'
+    implementation 'org.junit.vintage:junit-vintage-engine'
+
+    implementation platform('org.mockito:mockito-bom:5.11.0')
+    implementation 'org.mockito:mockito-core'
+    implementation 'org.mockito:mockito-junit-jupiter'
+
+    implementation platform('com.squareup.retrofit2:retrofit-bom:2.11.0')
+    implementation 'com.squareup.retrofit2:retrofit'
+    implementation 'com.squareup.retrofit2:converter-gson'
+
+    // https://mvnrepository.com/artifact/com.sun.mail/jakarta.mail
+    implementation group: 'com.sun.mail', name: 'jakarta.mail', version: '2.0.1'
+
+    pitest 'org.pitest:pitest-junit5-plugin:1.1.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+pitest {
+    targetClasses = ['org.example.*'] // Paquete de clases a mutar
+    mutators = ['DEFAULTS'] // Conjunto de mutadores [OLD_DEFAULTS, DEFAULTS, STRONGER, ALL]
+    outputFormats = ['HTML'] // Formato de salida del informe
+    timestampedReports = false // Deshabilitar informes con marca de tiempo para facilitar la navegación
+    verbose = true
+}

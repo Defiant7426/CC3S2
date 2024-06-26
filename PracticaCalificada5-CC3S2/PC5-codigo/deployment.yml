@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tower-defense-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tower-defense-game
+  template:
+    metadata:
+      labels:
+        app: tower-defense-game
+    spec:
+      containers:
+        - name: tower-defense-game
+          image: tower-defense-game
+          ports:
+            - containerPort: 8080
